@@ -331,4 +331,7 @@
         required:
           - tracer
           - tracerConfig
-  result: {}
+  result:
+    name: Trace result
+    schema:
+      type: string
