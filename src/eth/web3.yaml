@@ -1,0 +1,8 @@
+- name: web3_clientVersion
+  summary: Returns the current client version.
+  params: []
+  result:
+    name: Client version
+    schema:
+      title: string
+      type: string
