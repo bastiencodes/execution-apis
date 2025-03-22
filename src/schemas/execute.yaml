@@ -1,5 +1,6 @@
 EthSimulatePayload:
   title: Arguments for multi call
+  type: object
   required:
     - blockStateCalls
   properties:

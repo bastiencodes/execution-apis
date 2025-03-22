@@ -12797,6 +12797,7 @@
 					"required": true,
 					"schema": {
 						"title": "Arguments for multi call",
+						"type": "object",
 						"required": [
 							"blockStateCalls"
 						],
