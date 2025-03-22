@@ -12903,6 +12903,7 @@
 												"oneOf": [
 													{
 														"title": "Account override with whole storage replacement",
+														"type": "object",
 														"description": "It is possible to override any kind of address (EOA's, contracts and precompiles)",
 														"required": [
 															"state"
@@ -12946,6 +12947,7 @@
 													},
 													{
 														"title": "Account override with partial storage modification",
+														"type": "object",
 														"required": [
 															"stateDiff"
 														],

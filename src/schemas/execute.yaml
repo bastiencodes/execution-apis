@@ -65,6 +65,7 @@ AccountOverride:
     - $ref: '#/components/schemas/AccountOverrideStateDiff'
 AccountOverrideState:
   title: Account override with whole storage replacement
+  type: object
   description: It is possible to override any kind of address (EOA's, contracts and precompiles)
   required:
     - state
@@ -88,6 +89,7 @@ AccountOverrideState:
       $ref: '#/components/schemas/AccountStorage'
 AccountOverrideStateDiff:
   title: Account override with partial storage modification
+  type: object
   required:
     - stateDiff
   properties:
