@@ -67,6 +67,18 @@ schemaFiles.forEach(file => {
   };
 });
 
+methodsBase = "src/web3/";
+methodFiles = fs.readdirSync(methodsBase);
+methodFiles.forEach(file => {
+  console.log(file);
+  let raw = fs.readFileSync(methodsBase + file);
+  let parsed = yaml.load(raw);
+  methods = [
+    ...methods,
+    ...parsed,
+  ];
+});
+
 schemasBase = "src/engine/openrpc/schemas/"
 schemaFiles = fs.readdirSync(schemasBase);
 schemaFiles.forEach(file => {
